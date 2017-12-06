@@ -12,7 +12,7 @@
  }
  
  #timeline {
-   margin-top: 200px;
+   margin-top: 150px;
    margin-bottom: 50px;
    padding-left: 200px;
    list-style: none;
@@ -45,7 +45,7 @@
    position: absolute;
    left: 65px;
    right: 0;
-   top: -50px;
+   top: -26px;
    cursor: pointer;
    opacity: 0;
    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
@@ -89,7 +89,7 @@
    font-size: 14px;
    color: #9B9B9B;
    position: absolute;
-   top: -40px;
+   top: -10px;
    left: -40px;
    display: block;
  }
@@ -102,7 +102,7 @@
    border: 5px solid #979797;
    border-radius: 50%;
    position: absolute;
-   top: -35px;
+   top: -5px;
    left: 50%;
  }
  

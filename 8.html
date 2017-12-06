@@ -16,7 +16,7 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/map.css" rel="stylesheet">
+    <link href="css/timeline2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -126,21 +126,146 @@
                 </div>
             </div>
         </div>
-        <div class="container center page-content">
-            <div class="center">
-                <h3>¿Dónde se encuentra la propiedad que desea asegurar?</h3><br>
-            </div>
-            <div id="map"></div>
-            <div style="margin-top:20px; text-align:center;">
-                <input id="pac-input" class="controls" type="text" placeholder="Dirección">
-                <div class="form-container">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <a href="#" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Continuar</a>
-                    </form>
-                </div>
-            </div>
+
+
+
+
+
+                        <!-- Fieldsets -->
+                        <fieldset>
+        <div class="container center">
+            <h3>¿La vivienda tiene algún porcentaje de material inflamable en su construcción?</h3>
+            <h4 style="    font-size: 14px;
+            color: grey;
+            text-align: center;
+            padding-top: 20px;
+        }"> Ejemplo: madera</h4>
+
+
+            <ul id='timeline'>
+                <li class='entry'>
+                    <input checked='checked' class='radio' id='trigger5' name='trigger' type='radio'>
+                    <label for='trigger5'>
+                    <span>
+                   </span>
+                  </label>
+                    <span class='date'>0%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger4' name='trigger' type='radio'>
+                    <label for='trigger4'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>10%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger3' name='trigger' type='radio'>
+                    <label for='trigger3'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>20%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger2' name='trigger' type='radio'>
+                    <label for='trigger2'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>30%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger1' name='trigger' type='radio'>
+                    <label for='trigger1'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>40%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input checked='checked' class='radio' id='trigger6' name='trigger' type='radio'>
+                    <label for='trigger6'>
+                    <span>
+                   </span>
+                  </label>
+                    <span class='date'>50%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger7' name='trigger' type='radio'>
+                    <label for='trigger7'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>60%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger8' name='trigger' type='radio'>
+                    <label for='trigger8'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>70%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger9' name='trigger' type='radio'>
+                    <label for='trigger9'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>80%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger10' name='trigger' type='radio'>
+                    <label for='trigger10'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>90%</span>
+                    <span class='circle'></span>
+
+                </li>
+                <li class='entry'>
+                    <input class='radio' id='trigger11' name='trigger' type='radio'>
+                    <label for='trigger11'>
+                    <span>
+                    </span>
+                  </label>
+                    <span class='date'>100%</span>
+                    <span class='circle'></span>
+
+                </li>
+            </ul>
+
+
         </div>
+        <form name="sentMessage" id="contactForm" novalidate>
+            <a href="#" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Continuar</a>
+        </form>
+
+
+
     </div>
+</fieldset>
+<!-- End Fieldsets -->
 
     <!-- Footer -->
     <div class="container bc-footer">
@@ -177,9 +302,6 @@
             interval: 5000 //changes the speed
         })
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-DUp6zlxLpNMNcZ5CMtGt_dS0FO10R6k&libraries=places&callback=initAutocomplete"
-        async defer></script>
-    <script src="js/map.js"></script>
 </body>
 
 </html>

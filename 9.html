@@ -16,6 +16,8 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/button-checkbox.css" rel="stylesheet">
+    
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -126,26 +128,62 @@
             </div>
         </div>
         <div class="container center">
-            <h3 style="margin-bottom:50px;">Información de contacto:</h3>
+            <h3>Elige la cobertura que necesitas evaluar</h3>
+            <h3>(Puedes escoger una o más opciones)</h3>
+            
 
-            <div class="form-container"> 
-                <div class="btn-group">
-                  <div class="dropdown form-control-inline">
-                      <a href="#" class="btn btn-primary next-button" role="button">PROPIETARIO</a>
-                      
-                  </div>
-        
-                  <div class="dropdown form-control-inline">
-                      <a href="#" class="btn btn-primary next-button" role="button">ARRENDATARIO</a>
-                      
-                  </div>
-        
-        
-                </div>
+              <div class="form-container"> 
+                  <form>
 
-        
-              </form>
-            </div>
+
+
+                  <div class="btn-group">
+                    <div class="dropdown form-control-inline">
+                        <a href="#" class="btn btn-primary option-button-secondary" role="button">Estructura</a>
+                    </div>
+          
+                    <div class="dropdown form-control-inline">
+                        <a href="#" class="btn btn-primary option-button-secondary" role="button">Contenido</a>
+                        
+                    </div>
+
+                    <div class="dropdown form-control-inline">
+                        <a href="#" class="btn btn-primary option-button-secondary" role="button">Ambas</a>
+                        
+                    </div>
+                  </div>
+
+
+
+                  <div id="ck-button">
+                        <label>
+                           <input type="checkbox" value="1"><span>Incendio</span>
+                        </label>
+                     </div>
+                     
+                     <div id="ck-button">
+                        <label>
+                           <input type="checkbox" value="1"><span>Sismo</span>
+                        </label>
+                     </div>
+                     
+                     <div id="ck-button">
+                        <label>
+                           <input type="checkbox" value="1"><span>Robo</span>
+                        </label>
+                     </div>
+
+
+
+
+
+
+                  <div id="success"></div>
+                  <!-- For success/fail messages -->
+                  <a href="antecedentes-acompanante.html" class="btn btn-primary next-button" role="button">Continuar</a>
+
+                </form>
+              </div>
           
            
 

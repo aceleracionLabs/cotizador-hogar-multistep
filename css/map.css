@@ -1,8 +1,8 @@
       #map {
-        height: 30vh;
+        height: 25vh;
         margin: 0 auto;
         padding: 0;
-        max-width: 700px;
+        max-width: 600px;
       }
       /* Optional: Makes the sample page fill the window. */
       #mapframe {
@@ -30,7 +30,7 @@
         text-overflow: ellipsis;
         width: 40vw;
         min-width: 300px;
-        max-width: 700px;
+        max-width: 600px;
         z-index: 5 !important;
         margin: 0 auto;
           }
