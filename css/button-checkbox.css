@@ -3,7 +3,7 @@ div label input {
 }
 
 #ck-button {
-    margin:4px;
+    margin:30px 4px;
     border-radius:10px;
     border:1px solid #0971CE;
     overflow:auto;
@@ -12,12 +12,12 @@ div label input {
 
 #ck-button label {
     float:left;
-    width:4.0em;
+    width:14em;
 }
 
 #ck-button label span {
     text-align:center;
-    padding:18px 0px;
+    padding:10px 0px;
     display:block;
     color: #0971CE;
     font-size: 14px;
@@ -25,10 +25,17 @@ div label input {
 
 #ck-button label input {
     position:absolute;
-    top:-20px;
 }
 
 #ck-button input:checked + span {
     background-color:#0971CE;
     color:#fff;
+}
+
+label {
+    margin-bottom: 0px !important;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: -4px 15px 0 !important;
 }

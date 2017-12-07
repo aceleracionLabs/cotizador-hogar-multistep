@@ -1416,3 +1416,35 @@ input:not(:focus):valid~.floating-label {
    font-size: 30px;
    font-weight: bold;
 }
+.bienes-container {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex;
+}
+.bienes-item {
+    max-width: 300px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+.bienes-container h1 {
+   font-size: 20px;
+   text-align: center;
+   padding-bottom: 20px;
+   font-weight: bold;
+}
+.bienes-container h2 {
+   font-size: 20px;
+   text-align: center;
+}
+.bienes-container h3 {
+   font-size: 14px;
+   text-align: left;
+   line-height: 5px;
+}
+.bienes-container-price {
+   font-size: 30px;
+   font-weight: bold;
+}
