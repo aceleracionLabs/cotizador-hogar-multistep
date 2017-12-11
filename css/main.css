@@ -330,6 +330,32 @@ hr {
     width: 90vw;
 }
 
+.form-container-10 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-container-10 p {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.form-container-10 i {
+    color: #0071CE;
+    padding-right: 10px;
+}
+
+.form-container-10 input {
+    background-color: transparent;
+    border-color: #0971CE;
+    height: 50px;
+    text-align: left;
+    flex-grow: 2;
+    width: 30vw;
+}
+
 .form-control {
     border-radius: 10px;
 }
@@ -788,6 +814,25 @@ textarea::-webkit-input-placeholder {
     display: block;
 }
 
+.plans-container {
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;  
+}
+.plan-container {
+    width: 100%;
+    max-width: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: center;
+    flex-grow: 1;   
+    border-right: none; 
+    padding-right: 30px;
+}
+.plan-container:last-child {
+    border-right: none; 
+}
+
 @media (min-width:768px) {
     #navbar-desktop {
         visibility: visible;
@@ -1079,6 +1124,10 @@ textarea::-webkit-input-placeholder {
         width: 55vw;
         flex-grow: 1;
     }
+    .form-container-10 input {
+        width: 15vw;
+        flex-grow: 1;
+    }
     .container-plans {
         display: flex;
         justify-content: center;
@@ -1125,6 +1174,24 @@ textarea::-webkit-input-placeholder {
     .modal-body img {
         width: 100%;
         margin: 0 auto;
+    }
+    .plans-container {
+        display: flex;
+        justify-content: space-around;  
+        flex-wrap: wrap;  
+    }
+    .plan-container {
+        width: 100%;
+        max-width: 250px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        justify-content: center;
+        flex-grow: 1;   
+        border-right: 1px solid #ccc; 
+        padding-right: 30px;
+    }
+    .plan-container:last-child {
+        border-right: none; 
     }
 }
 
@@ -1386,12 +1453,6 @@ input:not(:focus):valid~.floating-label {
    font-size: 30px;
    font-weight: bold;
 }
-.plan-container {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    justify-content: center;
-}
 .plan-container h1 {
    font-size: 16px;
    text-align: center;
@@ -1404,7 +1465,7 @@ input:not(:focus):valid~.floating-label {
 }
 .plan-container h3 {
    font-size: 18px;
-   text-align: right;
+   text-align: center;
    line-height: 20px;
 }
 .plan-container h4 {
@@ -1416,6 +1477,18 @@ input:not(:focus):valid~.floating-label {
    font-size: 30px;
    font-weight: bold;
 }
+.plan-container a {
+    max-width: 191px;
+}
+.asistencias {
+    width: 25vw;
+    max-width: 500px;
+    padding: 10px 50px 10px 10px;
+    background: none;
+    align-content: center;
+    display: flex;
+    text-align: center;
+}
 .bienes-container {
     width: 100%;
     background-color: #F2F2F2;
@@ -1423,11 +1496,17 @@ input:not(:focus):valid~.floating-label {
     padding-bottom: 30px;
     justify-content: center;
     display: flex;
+    margin-bottom: 25px;
 }
 .bienes-item {
-    max-width: 300px;
+    max-width: 450px;
     margin: 0 auto;
     flex-grow: 1;
+    padding-left: 10px;
+    display: inline-flex;
+}
+.bienes-item img {
+    padding: 20px;
 }
 .bienes-container h1 {
    font-size: 20px;
@@ -1442,9 +1521,47 @@ input:not(:focus):valid~.floating-label {
 .bienes-container h3 {
    font-size: 14px;
    text-align: left;
-   line-height: 5px;
+   line-height: 13px;
 }
 .bienes-container-price {
    font-size: 30px;
    font-weight: bold;
 }
+.resumen-container {
+    width: 100%;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+.resumen-item {
+    max-width: 450px;
+    margin: 0 50px;
+    flex-grow: 0;
+    padding-left: 10px;
+    display: inline-flex;
+}
+.resumen-item img {
+    padding: 20px;
+}
+.resumen-container h1 {
+   font-size: 20px;
+   text-align: center;
+   font-weight: bold;
+}
+.resumen-container h2 {
+   font-size: 20px;
+   text-align: left;
+}
+.resumen-container h3 {
+   font-size: 14px;
+   text-align: left;
+   line-height: 3px;
+}
+.resumen-container-price {
+   font-size: 30px;
+   font-weight: bold;
+}
+

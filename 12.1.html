@@ -35,9 +35,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4">
-                    <a class="navbar-brand" href="index.html"> 
-            <img src="assets/logo-bciseguros.png" alt="BCI Seguros"> 
-          </a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/logo-bciseguros.png" alt="BCI Seguros">
+                    </a>
                 </div>
 
                 <div class="col-sm-4 col-md-4 col-lg-4 maintitle-desktop">
@@ -46,9 +46,9 @@
 
                 <div class="col-sm-4 col-md-4 col-lg-4 notificaton-bar">
                     <div class="notice pull-right">
-                        <a class="navbar-brand callme" href="#"> 
-              <img src="assets/tellamamos.png" alt="Te llamamos"> 
-            </a>
+                        <a class="navbar-brand callme" href="#">
+                            <img src="assets/tellamamos.png" alt="Te llamamos">
+                        </a>
                         <div>
                             <form>
                                 <h3>¿Quieres que te contactemos a este u otro número?</h3>
@@ -57,7 +57,8 @@
                                     autofocus>
 
                                 <!-- For success/fail messages -->
-                                <a href="#" class="btn" role="button"><i class="fa fa-phone" aria-hidden="true"></i> Quiero que me llamen</a>
+                                <a href="#" class="btn" role="button">
+                                    <i class="fa fa-phone" aria-hidden="true"></i> Quiero que me llamen</a>
                                 <br/>
                                 <br/>
                                 <p>Te contactaremos de lunes a viernes de 9:00 a 18:00 hrs.</p>
@@ -78,13 +79,13 @@
             <!-- Brand and title get grouped for better mobile display -->
             <div class="navbar-header col-xs-6 col-sm-6">
                 <a class="navbar-brand" href="#">
-          <img src="assets/logo-bciseguros.png" alt="BCI Seguros">
-        </a>
+                    <img src="assets/logo-bciseguros.png" alt="BCI Seguros">
+                </a>
             </div>
             <div class="pull-right">
                 <a class="navbar-brand" href="contacto.html">
-          <img src="assets/tellamamos.png" alt="Te llamamos">
-        </a>
+                    <img src="assets/tellamamos.png" alt="Te llamamos">
+                </a>
             </div>
             <div class="container-fluid maintitle">
                 <h1>Seguro Hogar</h1>
@@ -125,34 +126,51 @@
                 </div>
             </div>
         </div>
-        <div class="container center">
 
 
-           <!-- Page Content -->
-  <div class="container page-content container-last">
-
-
-    <div class="container confirmation center">
-      <img src="assets/check.png" alt="sm1"> </a>
-    </div>
-    <h2 class="confirmation-h2">Gracias uno de nuestros ejecutivos se contactará con usted.</h2>
-
-
-
-  <div class="form-container">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <a href="#" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Volver al cotizador</a>
-                    </form>
+        <!-- Fieldsets -->
+        <fieldset>
+            <div class="center">
+                <h3>Felicitaciones, estos son los datos de contratación para tu seguro</h3>
+            </div>
+            <div class="resumen-container">
+                <div class="resumen-item">
+                    <div>
+                        <h2>Tipo de seguro contratado</h2>
+                        <h2>Total a pagar por mes</h2>
+                    </div>
                 </div>
+                <div class="resumen-item">
+                    <div>
+                        <h2>Seguro con cobertura:
+                            <br>Incendio + sismo</h2>
+                        <h2>
+                            <strong style="font-size:40px;">$4.530</strong>
+                        </h2>
+                        <h3>0.17 UF /Mensual</h3>
+                    </div>
+                </div>
+            </div>
 
 
-  </div>
-
-
-        </div>
-
-
-
+            <div class="form-container">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="checkbox checkbox-text">
+                        <label>
+                            <input type="checkbox" value="" style="float: left; margin-top: -15px;>">Acepto las condiciones de la propuesta.</label>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <a href="confirmacion.html" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Contratar</a>
+                </form>
+            </div>
+            <div class="center" style="max-width: 800px; text-align:center; margin: 20px auto;">
+                <p>Cubre el riesgo Bci Seguros Generales S.A. Estas coberturas rigen bajo la POL 1 2013 0409 y está disponible
+                    en www.svs.cl. Aplica para personas naturles que contraten su seguro mediante WebPay.</p>
+            </div>
+    </div>
+    </fieldset>
+    <!-- End Fieldsets -->
 
 
     </div>
@@ -163,19 +181,26 @@
             <div class="container container-footer">
                 <div class="bc-footer-item pagaseguro">
                     <p>Paga seguro por internet</p>
-                    <a href="#">  <img src="assets/webpay.png" alt="WebPay"> </a>
-                    <a href="#">  <img src="assets/redcompra.png" alt="RedCompra"> </a>
+                    <a href="#">
+                        <img src="assets/webpay.png" alt="WebPay"> </a>
+                    <a href="#">
+                        <img src="assets/redcompra.png" alt="RedCompra"> </a>
                 </div>
                 <div id="socialmedia" class="bc-footer-item">
                     <p>Síguenos en</p>
-                    <a href="#" class="socialmedia">  <img src="assets/sm1.png" alt="sm1"> </a>
-                    <a href="#" class="socialmedia">  <img src="assets/sm2.png" alt="sm2"> </a>
-                    <a href="#" class="socialmedia">  <img src="assets/sm3.png" alt="sm3"> </a>
+                    <a href="#" class="socialmedia">
+                        <img src="assets/sm1.png" alt="sm1"> </a>
+                    <a href="#" class="socialmedia">
+                        <img src="assets/sm2.png" alt="sm2"> </a>
+                    <a href="#" class="socialmedia">
+                        <img src="assets/sm3.png" alt="sm3"> </a>
                 </div>
                 <div id="appdownload" class="bc-footer-item">
                     <p>Descarga la App</p>
-                    <a href="#" class="appdownload">  <img src="assets/googleplay.png" alt="Google Play"> </a>
-                    <a href="#" class="appdownload">  <img src="assets/appstore.png" alt="App Store"> </a>
+                    <a href="#" class="appdownload">
+                        <img src="assets/googleplay.png" alt="Google Play"> </a>
+                    <a href="#" class="appdownload">
+                        <img src="assets/appstore.png" alt="App Store"> </a>
                 </div>
             </div>
         </footer>
