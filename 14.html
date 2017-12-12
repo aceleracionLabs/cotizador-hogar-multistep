@@ -52,7 +52,7 @@
                         <div>
                             <form>
                                 <h5>¿Quieres que te contactemos a este u otro número?</h5>
-                                
+
                                 <input type="text" id="phone" required data-validation-required-message="Por favor ingresa tu celular." placeholder="Celular"
                                     autofocus>
 
@@ -127,30 +127,98 @@
             </div>
         </div>
 
+
         <!-- Fieldsets -->
         <fieldset>
-            <div class="container center">
-                <h3>¿Qué tipo de vivienda quiere asegurar?</h3>
+            <div class="container ">
+                <h3>Ingresar información para suscribir PAT:</h3>
+                <div class="form-container">
+                    <form name="sentMessage" id="contactForm" novalidate="">
 
-                <div class="selectcontainer">
-                    <div class=" nopadding selectcontainer-item">
-                        <a href="#">
-                            <div class="box-casa"></div>
-                        </a>
-                    </div>
-                    <div class=" nopadding pull-right selectcontainer-item">
-                        <a href="#">
-                            <div class="box-departamento"></div>
-                        </a>
-                    </div>
+                        <div class="control-group form-group automargin">
+                            <div class="controls">
+                                <input type="text" class="form-control loading " id="rut" required="" data-validation-required-message="RUT" autofocus="">
+                                <span class="floating-label">Nº de tarjeta de crédito</span>
+                            </div>
+                        </div>
+
+                        <div class="dropdown form-control-inline">
+                            <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Tipo de tarjeta
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Opción 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Opción 2</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown form-control-inline">
+                            <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Banco
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Opción 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Opción 2</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <div class="dropdown form-control-inline">
+                                <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Mes
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Opción 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Opción 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown form-control-inline">
+                                <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Año
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Opción 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Opción 2</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Opción 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="checkbox checkbox-text">
+                            <label>
+                                <input type="checkbox" value="" style="float: left; margin-top: -15px;>">Acepto las condiciones del presente mandato y suscripción electrónica de mi estado de cuenta.</label>
+                        </div>
+
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <a href="confirmacion.html" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Contratar</a>
+                    </form>
                 </div>
             </div>
         </fieldset>
         <!-- End Fieldsets -->
 
-
-
     </div>
+
 
     <!-- Footer -->
     <div class="container bc-footer">
@@ -193,6 +261,11 @@
         $('.carousel').carousel({
             interval: 5000 //changes the speed
         })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
     </script>
 </body>
 
