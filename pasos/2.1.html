@@ -30,114 +30,11 @@
 </head>
 
 <body>
-    <!-- Fixed header desktop -->
-    <nav id="navbar-desktop" class="navbar navbar-fixed-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/logo-bciseguros.png" alt="BCI Seguros">
-                    </a>
-                </div>
-
-                <div class="col-sm-4 col-md-4 col-lg-4 maintitle-desktop">
-                    <h1>Seguro Hogar</h1>
-                </div>
-
-                <div class="col-sm-4 col-md-4 col-lg-4 notificaton-bar">
-                    <div class="notice pull-right">
-                        <a class="navbar-brand callme" href="#">
-                            <img src="assets/tellamamos.png" alt="Te llamamos">
-                        </a>
-                        <div>
-                            <form>
-                                <h5>¿Quieres que te contactemos a este u otro número?</h5>
-                                
-                                <input type="text" id="phone" required data-validation-required-message="Por favor ingresa tu celular." placeholder="Celular"
-                                    autofocus>
-
-                                <!-- For success/fail messages -->
-                                <a href="#" class="btn" role="button">
-                                    <i class="fa fa-phone" aria-hidden="true"></i> Quiero que me llamen</a>
-                                <br/>
-                                <br/>
-                                <p>Te contactaremos de lunes a viernes de 9:00 a 18:00 hrs.</p>
-                                <p>También puedes llamar al siguiente número, de lunes a viernes en horario de oficina</p>
-                                <p>Llamar +56 2 26799694</p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Fixed header mobile -->
-    <nav id="navbar-mobile" class="navbar navbar-fixed-top">
-        <div class="container-fluid white-bg">
-            <!-- Brand and title get grouped for better mobile display -->
-            <div class="navbar-header col-xs-6 col-sm-6">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/logo-bciseguros.png" alt="BCI Seguros">
-                </a>
-            </div>
-            <div class="pull-right">
-                <a class="navbar-brand" href="contacto.html">
-                    <img src="assets/tellamamos.png" alt="Te llamamos">
-                </a>
-            </div>
-            <div class="container-fluid maintitle">
-                <h1>Seguro Hogar</h1>
-            </div>
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
-
-    <!-- Page Content -->
-    <div class="container page-content">
-        <div class="container">
-            <div class="breadcrumb row">
-                <div class="col-sm-4 col-md-4 col-lg-4 nopadding">
-                    <div class="numberCircle">1</div>
-                    <div>
-                        <a href="#">
-                            <p> datos vivienda</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 nopadding">
-                    <div class="numberCircle_off">2</div>
-                    <div>
-                        <a href="#">
-                            <p> propuesta</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4 nopadding">
-                    <div class="numberCircle_off">3</div>
-                    <div>
-                        <a href="#">
-                            <p> contratación</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!-- Fieldsets -->
         <fieldset>
             <div class="container center page-content">
-
-
                 <div class="form-container">
-
                     <form name="sentMessage" id="contactForm" novalidate>
-
-
                         <div class="grey-container">
                             <h2>
                                 <i class="fa fa-phone" aria-hidden="true"></i> Para asegurar este tipo de inmueble uno de nuestros
@@ -154,7 +51,6 @@
                                 <input type="text" class="form-control loading" id="name" required data-validation-required-message="Por favor ingresa tu nombre y apellido."
                                     autofocus>
                                 <span class="floating-label">Nombres Apellidos</span>
-
                             </div>
                         </div>
                         <div class="control-group form-group">
@@ -172,10 +68,7 @@
 
 
 
-                        <div id="success"></div>
-                        <!-- For success/fail messages -->
-                        <a href="antecedentes-acompanante.html" class="btn btn-primary next-button" role="button">Enviar</a>
-
+                     
                     </form>
                 </div>
 
@@ -188,52 +81,6 @@
 
 
 
-
-
-    </div>
-
-    <!-- Footer -->
-    <div class="container bc-footer">
-        <footer>
-            <div class="container container-footer">
-                <div class="bc-footer-item pagaseguro">
-                    <p>Paga seguro por internet</p>
-                    <a href="#">
-                        <img src="assets/webpay.png" alt="WebPay"> </a>
-                    <a href="#">
-                        <img src="assets/redcompra.png" alt="RedCompra"> </a>
-                </div>
-                <div id="socialmedia" class="bc-footer-item">
-                    <p>Síguenos en</p>
-                    <a href="#" class="socialmedia">
-                        <img src="assets/sm1.png" alt="sm1"> </a>
-                    <a href="#" class="socialmedia">
-                        <img src="assets/sm2.png" alt="sm2"> </a>
-                    <a href="#" class="socialmedia">
-                        <img src="assets/sm3.png" alt="sm3"> </a>
-                </div>
-                <div id="appdownload" class="bc-footer-item">
-                    <p>Descarga la App</p>
-                    <a href="#" class="appdownload">
-                        <img src="assets/googleplay.png" alt="Google Play"> </a>
-                    <a href="#" class="appdownload">
-                        <img src="assets/appstore.png" alt="App Store"> </a>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Script to Activate the Carousel -->
-    <script>
-        $('.carousel').carousel({
-            interval: 5000 //changes the speed
-        })
-    </script>
 </body>
 
 </html>

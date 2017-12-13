@@ -1,13 +1,13 @@
 /*form styles*/
 #msform {
 	max-width: 1000px;
+	min-height: 60vh;
 	width: 90vw;
-	margin: 50px auto;
+	margin: 0px auto;
 	text-align: center;
 	position: relative;
 }
 #msform fieldset {
-	background: white;
 	border: 0 none;
 	border-radius: 3px;
 	padding: 20px 30px;
@@ -35,16 +35,15 @@
 }
 /*buttons*/
 #msform .action-button {
-	width: 100px;
-	background: #0071CE;
-	font-weight: bold;
+    background-color: #0071CE;
+    width: 52vw;
+    max-width: 250px;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 20px;
+    padding-top: 15px;
+    flex-grow: 1;
+	align-self: center;
+	border-radius: 10px;
 	color: white;
-	border: 0 none;
-	border-radius: 1px;
-	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
-}
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #0071CE;
 }

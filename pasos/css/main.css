@@ -9,14 +9,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #FFF;
-    padding-top: 90px;
 }
 
 h3 {
     font-size: 14px;
     color: #333333;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 h5 {
@@ -24,6 +22,17 @@ h5 {
     color: #fff;
     text-align: center;
     margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.checkbox, .radio {
+    text-align: left !important;
 }
 
 p {
@@ -137,7 +146,6 @@ input[type="button"] {
 .page-content {
     margin-bottom: 30px;
     min-height: 60vh;
-    padding-top: 30px;
 }
 
 .white-bg {
@@ -1166,7 +1174,7 @@ textarea::-webkit-input-placeholder {
         flex-wrap: nowrap;
     }
     .form-container input {
-        width: 55vw;
+        width: 90vw;
         flex-grow: 1;
     }
     .form-container-10 input {
@@ -1469,7 +1477,7 @@ input:not(:focus):valid~.floating-label {
 /* Grey background content div */
 
 .grey-container {
-    width: 55vw;
+    width: 90vw;
     background-color: #F2F2F2;
     padding: 10px 5% 30px 5%;
     justify-content: center;
