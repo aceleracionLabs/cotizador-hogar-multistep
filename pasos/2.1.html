@@ -16,9 +16,6 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/map.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/singlepage.css">
-
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -55,7 +52,7 @@
                         <div>
                             <form>
                                 <h5>¿Quieres que te contactemos a este u otro número?</h5>
-
+                                
                                 <input type="text" id="phone" required data-validation-required-message="Por favor ingresa tu celular." placeholder="Celular"
                                     autofocus>
 
@@ -131,28 +128,64 @@
         </div>
 
 
-        <form id="msform">
-            <!-- progressbar -->
+        <!-- Fieldsets -->
+        <fieldset>
+            <div class="container center page-content">
 
-            <!-- fieldsets -->
-            <fieldset>
-                <div id="object">
-                        <embed src="pasos/1.1.html"> </embed>
+
+                <div class="form-container">
+
+                    <form name="sentMessage" id="contactForm" novalidate>
+
+
+                        <div class="grey-container">
+                            <h2>
+                                <i class="fa fa-phone" aria-hidden="true"></i> Para asegurar este tipo de inmueble uno de nuestros
+                                <br> ejecutivos se comunicará con usted.</h2>
+                        </div>
+                        <div class="center">
+                            <h3>Déjenos la siguiente información para ser contactado:</h3>
+                        </div>
+
+
+
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <input type="text" class="form-control loading" id="name" required data-validation-required-message="Por favor ingresa tu nombre y apellido."
+                                    autofocus>
+                                <span class="floating-label">Nombres Apellidos</span>
+
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor ingresa tu teléfono.">
+                                <span class="floating-label">Teléfono</span>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor ingresa tu Email.">
+                                <span class="floating-label">Email</span>
+                            </div>
+                        </div>
+
+
+
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <a href="antecedentes-acompanante.html" class="btn btn-primary next-button" role="button">Enviar</a>
+
+                    </form>
                 </div>
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Paso 2</h2>
-                <h3 class="fs-subtitle">We will never sell it</h3>
-                <input type="text" name="fname" placeholder="First Name" />
-                <input type="text" name="lname" placeholder="Last Name" />
-                <input type="text" name="phone" placeholder="Phone" />
-                <textarea name="address" placeholder="Address"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
-            </fieldset>
 
-        </form>
+
+            </div>
+
+        </fieldset>
+        <!-- End Fieldsets -->
+
+
 
 
 
@@ -201,13 +234,6 @@
             interval: 5000 //changes the speed
         })
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-DUp6zlxLpNMNcZ5CMtGt_dS0FO10R6k&libraries=places&callback=initAutocomplete"
-        async defer></script>
-    <script src="js/map.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-
-    <script src="js/singlepage.js"></script>
 </body>
 
 </html>

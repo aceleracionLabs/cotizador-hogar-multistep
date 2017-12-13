@@ -16,9 +16,6 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/map.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/singlepage.css">
-
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -131,33 +128,97 @@
         </div>
 
 
-        <form id="msform">
-            <!-- progressbar -->
+        <!-- Fieldsets -->
+        <fieldset>
+            <div class="container ">
+                <h3>Ingresar información para suscribir PAT:</h3>
+                <div class="form-container">
+                    <form name="sentMessage" id="contactForm" novalidate="">
 
-            <!-- fieldsets -->
-            <fieldset>
-                <div id="object">
-                        <embed src="pasos/1.1.html"> </embed>
+                        <div class="control-group form-group automargin">
+                            <div class="controls">
+                                <input type="text" class="form-control loading " id="rut" required="" data-validation-required-message="RUT" autofocus="">
+                                <span class="floating-label">Nº de tarjeta de crédito</span>
+                            </div>
+                        </div>
+
+                        <div class="dropdown form-control-inline">
+                            <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Tipo de tarjeta
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Opción 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Opción 2</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown form-control-inline">
+                            <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Banco
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Opción 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Opción 2</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <div class="dropdown form-control-inline">
+                                <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Mes
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Opción 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Opción 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown form-control-inline">
+                                <button class="btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Año
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Opción 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Opción 2</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">Opción 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="checkbox checkbox-text">
+                            <label>
+                                <input type="checkbox" value="" style="float: left; margin-top: -15px;>">Acepto las condiciones del presente mandato y suscripción electrónica de mi estado de cuenta.</label>
+                        </div>
+
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <a href="confirmacion.html" class="btn btn-primary next-button" role="button" data-toggle="modal" data-target="#loadingnext">Contratar</a>
+                    </form>
                 </div>
-                <input type="button" name="next" class="next action-button" value="Next" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Paso 2</h2>
-                <h3 class="fs-subtitle">We will never sell it</h3>
-                <input type="text" name="fname" placeholder="First Name" />
-                <input type="text" name="lname" placeholder="Last Name" />
-                <input type="text" name="phone" placeholder="Phone" />
-                <textarea name="address" placeholder="Address"></textarea>
-                <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
-            </fieldset>
-
-        </form>
-
-
-
+            </div>
+        </fieldset>
+        <!-- End Fieldsets -->
 
     </div>
+
 
     <!-- Footer -->
     <div class="container bc-footer">
@@ -201,13 +262,11 @@
             interval: 5000 //changes the speed
         })
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-DUp6zlxLpNMNcZ5CMtGt_dS0FO10R6k&libraries=places&callback=initAutocomplete"
-        async defer></script>
-    <script src="js/map.js"></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-
-    <script src="js/singlepage.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>

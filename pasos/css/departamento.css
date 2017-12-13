@@ -1,0 +1,158 @@
+/* -------------------------------------
+ * Set to false if you are not using Chrome
+ * ------------------------------------- */
+/* -------------------------------------
+ * Styles
+ * ------------------------------------- */
+ @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+ 
+ h2, #note {
+   margin: 0;
+ }
+ 
+ #timeline {
+   margin-top: 150px;
+   margin-bottom: 50px;
+   padding-left: 200px;
+   list-style: none;
+   background-image: url(../assets/departamento-selector.png);
+   background-repeat: no-repeat;
+   background-position-x: center;
+   background-position-y: top;
+  }
+ #timeline li {
+   padding-top: 50px;
+   position: relative;
+   flex: 1;
+   transition: all 0.4s ease-in-out;
+ }
+ #timeline li:hover {
+   flex: 2;
+ }
+ #timeline li:hover label {
+   opacity: 1;
+   transform: translateY(10px);
+ }
+ 
+ label {
+   max-width: 10px;
+   min-height: 30px;
+   margin: 0 auto;
+   padding: 5px 10px;
+   border-width: 2px;
+   background-color: #00953A;
+   position: absolute;
+   left: 65px;
+   right: 0;
+   top: -26px;
+   cursor: pointer;
+   opacity: 0;
+   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+ }
+ label:before, label:after {
+   content: "";
+   width: 0;
+   height: 0;
+   border: solid transparent;
+   position: absolute;
+   bottom: 100%;
+   pointer-events: none;
+ }
+ label:before {
+   border-right-color: #00953A;
+   border-width: 15px;
+   bottom: 50%;
+   margin-bottom: -15px;
+   margin-left: -40px;
+   
+ }
+ label:after {
+   border-right-color: #00953A;
+   border-width: 15px;
+   bottom: 50%;
+   margin-bottom: -15px;
+   margin-left: -40px;
+ }
+ label span {
+   text-align: center;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   display: block;
+ }
+ 
+ .date {
+   width: 100%;
+   padding-bottom: 30px;
+   text-align: center;
+   font-size: 14px;
+   color: #9B9B9B;
+   position: absolute;
+   top: -10px;
+   left: -40px;
+   display: block;
+ }
+ 
+ .circle {
+   width: 7px;
+   height: 7px;
+   margin-left: -8px;
+   background: #979797;
+   border: 5px solid #979797;
+   border-radius: 50%;
+   position: absolute;
+   top: -5px;
+   left: 50%;
+ }
+ 
+ 
+ 
+ .radio {
+   display: none;
+ }
+ 
+ .radio:checked + label {
+   opacity: 1;
+   transform: translateY(10px);
+   transition: opacity 0.4s ease-in-out 0.25s, transform 0.3s ease-in-out 0.25s;
+ }
+ .radio:checked ~ .circle {
+   background: #00953A;
+     border: 5px solid #00953A;
+ 
+ }
+ .radio:checked ~ .content {
+   z-index: 999;
+   transform: perspective(1000px) rotateY(15deg) translate(40px, 25px);
+   animation: switching 1s ease;
+ }
+ .radio:checked ~ .content h3, .radio:checked ~ .content p {
+   opacity: 1;
+   transition: opacity 0.4s ease-in-out 0.4s;
+ }
+ 
+ @keyframes switching {
+   0% {
+     transform: perspective(1000px) rotateY(20deg);
+   }
+   40% {
+     transform: perspective(1000px) rotateY(15deg) translate(100px, 35px);
+   }
+   100% {
+     transform: perspective(1000px) rotateY(15deg) translate(40px, 25px);
+   }
+ }
+ @keyframes switching_back {
+   0% {
+     transform: perspective(1000px) rotateY(15deg) translate(40px, 25px);
+     z-index: 200;
+   }
+   40% {
+     transform: perspective(1000px) rotateY(15deg) translate(0px, 0px) scale(1.08);
+   }
+   100% {
+     transform: perspective(1000px) rotateY(20deg);
+     z-index: 100;
+   }
+ }
